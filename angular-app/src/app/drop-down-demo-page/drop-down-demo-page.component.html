@@ -1,5 +1,9 @@
 <section class="container">
-    <h3>Drop down Demo Page</h3>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro nam temporibus obcaecati tenetur magnam dolor excepturi quaerat animi architecto dolores ut, aperiam inventore dignissimos eligendi odio doloribus expedita asperiores?
-    Officia dicta error, et dolorem eaque quaerat placeat neque cumque sequi optio nemo molestiae, culpa nihil. Quaerat, excepturi debitis ipsa voluptas unde veniam explicabo aspernatur saepe dolor ipsam suscipit doloribus!
+    <core-card header="Drop Down Demo">
+        <section class="flex-col">
+            <core-drop-down [label]="'Fleet 1'" [options]="dropDownOptions" color="primary" size="small"></core-drop-down>
+            <core-drop-down [label]="'Fleet 2'" [options]="dropDownOptions"></core-drop-down>
+            <core-drop-down [label]="'Fleet 3'" [options]="dropDownOptions" size="large" color="info"></core-drop-down>
+        </section>
+    </core-card>
 </section>

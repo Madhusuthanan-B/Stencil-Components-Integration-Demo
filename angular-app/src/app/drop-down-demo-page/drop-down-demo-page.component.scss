@@ -1,3 +1,12 @@
 .container {
     margin: 0 150px;
 }
+.flex-col {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    core-drop-down {
+        margin: 10px;
+    }
+}
