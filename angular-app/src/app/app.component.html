@@ -361,13 +361,14 @@
     </svg>
 
   </div>
-  <div class="card-container">
+  <!-- <div class="card-container">
     <core-btn color="primary" (click)="onClick($event)">Primary</core-btn>
     <core-btn color="secondary">Secondary</core-btn>
     <core-btn color="error">Error</core-btn>
     <core-btn color="warn">Warn</core-btn>
     <core-btn color="info">Info</core-btn>
     <button (click)="onClick($event)">Normal button</button>
+    <core-btn color="success" size="small" type="outline">Outline button</core-btn>
   </div>
   <div class="card-container">
 
@@ -377,9 +378,9 @@
     <core-spinner type="border" color="error"></core-spinner>
     <core-spinner type="border" color="warn"></core-spinner>
     <core-spinner type="border" color="info"></core-spinner>
-  </div>
-
-  <core-card header="Card header">
+  </div> -->
+  <core-nav-bar class="wrapper" [options]="navBarOptions" (coreNavItemSelected)="onNavigationSelect($event)"></core-nav-bar>
+  <core-card *ngIf="isCardVisible" class="wrapper" header="Card header">
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, quam enim! Vel neque esse qui beatae
       aliquam, praesentium non nobis odit velit veniam error quo laboriosam enim harum. Laborum, error!
       Quae debitis quasi illum, optio eius at eaque molestias quo quam fugit reiciendis a eum adipisci officiis
