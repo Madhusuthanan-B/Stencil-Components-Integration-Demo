@@ -1,0 +1,22 @@
+{
+  "name": "stencil-components-integration-demo",
+  "version": "1.0.0",
+  "description": "A repository to show case that same component library can be used in angular, react and vue applications",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-angular": "cd angular-app && npm run start",
+    "start-react": "cd react-app && npm run start",
+    "start-vue": "cd vue-app && npm run serve",
+    "start": "concurrently --kill-others \"npm run start-angular\" \"npm run start-react\" \"npm run start-vue\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madhusuthanan-B/Stencil-Components-Integration-Demo.git"
+  },
+  "author": "madhub081011@gmail.com",
+  "license": "ISC",
+  "homepage": "https://github.com/Madhusuthanan-B/Stencil-Components-Integration-Demo#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
