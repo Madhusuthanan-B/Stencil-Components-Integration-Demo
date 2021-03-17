@@ -22,3 +22,11 @@ The library used in these applications is generated from: https://github.com/Mad
 | Angular     | http://localhost:4200 |
 | React       | http://localhost:3000 |
 | Vue         | http://localhost:8080 |
+
+## Tooling
+
+* This repository comes with VS Code extension (Not published in store. Available for demo purpose).
+* This extension will provide you with the available web component snippets to increase your productivity.
+* The idea is to provide a good developer experience and keep the documentation very close (near your fingertips) while coding.
+* To make use of this, download the .vsix file under tooling directory
+* Install this in your VS Code: https://stackoverflow.com/questions/42017617/how-to-install-vs-code-extension-manually
