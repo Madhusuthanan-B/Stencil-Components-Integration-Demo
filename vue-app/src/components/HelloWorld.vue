@@ -1,42 +1,47 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <core-card header="Component Demo" subheader="Sub header">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, quam
+        enim! Vel neque esse qui beatae aliquam, praesentium non nobis odit
+        velit veniam error quo laboriosam enim harum. Laborum, error! Quae
+        debitis quasi illum, optio eius at eaque molestias quo quam fugit
+        reiciendis a eum adipisci officiis voluptate nobis atque magnam suscipit
+        consectetur dolorem. Porro aspernatur sit nihil quasi doloremque.
+        Molestiae, itaque aspernatur. Et nam velit incidunt, debitis eos illum
+        ipsum, enim illo eum rem asperiores. Aliquid provident maiores deserunt
+        facilis, delectus, suscipit dolore, impedit sit nemo distinctio porro
+        enim!
+      </p>
+    </core-card>
+    <core-card>
+      <div class="demo-section">
+        <core-btn color="primary">Primary</core-btn>
+        <core-btn color="secondary">Secondary</core-btn>
+        <core-btn color="error">Error</core-btn>
+        <core-btn color="warn">Warn</core-btn>
+        <core-btn color="info">Info</core-btn>
+      </div>
+      <div class="demo-section">
+        <core-spinner></core-spinner>
+        <core-spinner type="border" color="primary"></core-spinner>
+        <core-spinner type="border" color="secondary"></core-spinner>
+        <core-spinner type="border" color="error"></core-spinner>
+        <core-spinner type="border" color="warn"></core-spinner>
+        <core-spinner type="border" color="info"></core-spinner>
+      </div>
+    </core-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -54,5 +59,11 @@ li {
 }
 a {
   color: #42b983;
+}
+.demo-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 1rem;
 }
 </style>
