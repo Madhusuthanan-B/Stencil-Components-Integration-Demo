@@ -1,7 +1,27 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <core-card header="Component Demo" subheader="Sub header">
+
+    <core-card header="Nav bar">
+      <section class="flex-col">
+        <core-nav-bar
+          header="Title"
+          options='[{"name": "Home", "value": "/home"}, {"name": "Features", "value": "/features"}, {"name": "Pricing", "value": "/pricing"},  {"name": "Launch", "value": "/launch", "isDisabled": true}]'
+        >
+        </core-nav-bar>
+      </section>
+    </core-card>
+
+    <core-card header="List Group">
+      <section class="flex-col">
+        <core-list-group
+          options='[{"name": "Ship 1", "value": "ship1_imo"},{"name": "Ship 2", "value": "ship2_imo"},{"name": "Ship 3", "value": "ship3_imo", "isDisabled": true}, {"name": "Ship 4", "value": "ship4_imo"}]'
+        >
+        </core-list-group>
+      </section>
+    </core-card>
+
+    <core-card header="Card" subheader="This works based on slot projection">
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, quam
         enim! Vel neque esse qui beatae aliquam, praesentium non nobis odit
@@ -15,22 +35,63 @@
         enim!
       </p>
     </core-card>
-    <core-card>
-      <div class="demo-section">
-        <core-btn color="primary">Primary</core-btn>
-        <core-btn color="secondary">Secondary</core-btn>
-        <core-btn color="error">Error</core-btn>
-        <core-btn color="warn">Warn</core-btn>
-        <core-btn color="info">Info</core-btn>
-      </div>
-      <div class="demo-section">
+
+    <core-card header="Spinners">
+      <section class="flex-col">
         <core-spinner></core-spinner>
         <core-spinner type="border" color="primary"></core-spinner>
         <core-spinner type="border" color="secondary"></core-spinner>
-        <core-spinner type="border" color="error"></core-spinner>
+        <core-spinner type="border" color="danger"></core-spinner>
         <core-spinner type="border" color="warn"></core-spinner>
         <core-spinner type="border" color="info"></core-spinner>
-      </div>
+        <core-spinner type="grow" color="primary"></core-spinner>
+        <core-spinner type="grow" color="secondary"></core-spinner>
+        <core-spinner type="grow" color="danger"></core-spinner>
+        <core-spinner type="grow" color="warn"></core-spinner>
+        <core-spinner type="grow" color="info"></core-spinner>
+      </section>
+    </core-card>
+
+    <core-card header="Buttons">
+      <section class="flex-col">
+        <core-btn color="primary">Primary</core-btn>
+        <core-btn color="secondary">Secondary</core-btn>
+        <core-btn color="danger">Error</core-btn>
+        <core-btn color="warn">Warn</core-btn>
+        <core-btn color="info">Info</core-btn>
+        <core-btn color="success">Success</core-btn>
+        <core-btn color="primary" type="outline">Primary</core-btn>
+        <core-btn color="secondary" type="outline">Secondary</core-btn>
+        <core-btn color="danger" type="outline">Error</core-btn>
+        <core-btn color="warn" type="outline">Warn</core-btn>
+        <core-btn color="info" type="outline">Info</core-btn>
+        <core-btn color="success" type="outline">Succees</core-btn>
+      </section>
+    </core-card>
+
+    <core-card header="Drop downs">
+      <section class="flex-col">
+        <core-drop-down
+          label="Small"
+          color="primary"
+          size="small"
+          options='[{"name": "Small option 1", "value": "Small option 1 value"}, {"name": "Small option 2", "value": "Small option 2 value"}]'
+        >
+        </core-drop-down>
+        <core-drop-down
+          label="Default"
+          options='[{"name": "Option 1", "value": "Option 1 value"}, {"name": "Option 2", "value": "Option 2 value"}, {"name": "Option 3", "value": "Option 3 value"}]'
+        >
+          Default</core-drop-down
+        >
+        <core-drop-down
+          label="Large"
+          size="large"
+          color="info"
+          options='[{"name": "Option 1", "value": "Option 1 value"}]'
+        >
+        </core-drop-down>
+      </section>
     </core-card>
   </div>
 </template>
@@ -60,10 +121,12 @@ li {
 a {
   color: #42b983;
 }
-.demo-section {
+.flex-col {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
-  margin: 1rem;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+core-card {
+  margin: 50px;
 }
 </style>
