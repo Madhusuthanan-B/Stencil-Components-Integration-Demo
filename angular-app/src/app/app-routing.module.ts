@@ -31,6 +31,11 @@ const routes: Routes = [
   {
     path: 'play-ground',
     component: CombinedPlaygroundComponent
+  },
+  {
+    path: '',
+    redirectTo: 'introduction',
+    pathMatch: 'full'
   }
 ];
 
