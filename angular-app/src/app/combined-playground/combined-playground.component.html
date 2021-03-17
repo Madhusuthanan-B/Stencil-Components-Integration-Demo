@@ -5,6 +5,7 @@
         </section>
         <section class="flex-col">
             <core-spinner *ngIf="isLoading" type="border" color="info"></core-spinner>
+            <core-drop-down *ngIf="!isLoading && showList" [label]="'Select a company'" [options]="dropDownOptions" (coreOptionSelected)="updateList($event)"></core-drop-down>
             <core-list-group *ngIf="!isLoading && showList" [options]="listOptions"></core-list-group>
         </section>
     </core-card>

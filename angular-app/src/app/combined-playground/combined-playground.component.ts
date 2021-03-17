@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IDropDownOption } from '@foo/core-library/dist/types/components/drop-down/drop-down.model';
 import { IListGroupOption } from '@foo/core-library/dist/types/components/list-group/list-group.model';
 
 @Component({
@@ -23,17 +24,20 @@ export class CombinedPlaygroundComponent implements OnInit {
     {
       name: 'CMA CGM Group',
       value: 'cma-cgm-group'
-    },
+    }
+  ];
+
+  dropDownOptions: IDropDownOption[] = [
     {
-      name: 'China Ocean Shipping (Group) Company (COSCO)',
+      name: 'China Ocean Group',
       value: 'china-ocean-shipping-group'
     },
     {
-      name: 'Hamburg Süd Group. TEU: 646,918',
+      name: 'Hamburg Süd Group',
       value: 'hamburg-sud-group'
     },
     {
-      name: 'Hanjin Shipping. TEU: 621,243',
+      name: 'Hanjin Shipping G',
       value: 'hanjin-shipping'
     }
   ];
@@ -45,11 +49,18 @@ export class CombinedPlaygroundComponent implements OnInit {
 
   loadList() {
     this.isLoading = true;
-
     setTimeout(() => {
       this.isLoading = false;
       this.showList = true;
-    }, 3000);
+    }, 2000);
+  }
+
+  updateList(option: CustomEvent<IDropDownOption>) {
+    const selection = option.detail;
+    if (this.listOptions.some((option) => option.value === selection.value)) {
+      return;
+    }
+    this.listOptions = [...this.listOptions, selection];
   }
 
 }
