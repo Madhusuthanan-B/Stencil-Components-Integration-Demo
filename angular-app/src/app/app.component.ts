@@ -13,7 +13,7 @@ export class AppComponent {
   navBarOptions: INavBarOption[] = [
     {
       name: 'Introduction',
-      value: 'intro',
+      value: 'introduction',
       isActive: true,
       isDisabled: false
     },
@@ -42,8 +42,8 @@ export class AppComponent {
       isDisabled: false
     },
     {
-      name: 'Lazy loading demo',
-      value: 'lazy-demo',
+      name: 'Play Ground',
+      value: 'play-ground',
       isActive: false,
       isDisabled: false
     },

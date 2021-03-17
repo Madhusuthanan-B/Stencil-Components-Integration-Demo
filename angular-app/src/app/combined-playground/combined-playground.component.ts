@@ -2,11 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { IListGroupOption } from '@foo/core-library/dist/types/components/list-group/list-group.model';
 
 @Component({
-  selector: 'app-list-group-demo-page',
-  templateUrl: './list-group-demo-page.component.html',
-  styleUrls: ['./list-group-demo-page.component.scss']
+  selector: 'app-combined-playground',
+  templateUrl: './combined-playground.component.html',
+  styleUrls: ['./combined-playground.component.scss']
 })
-export class ListGroupDemoPageComponent implements OnInit {
+export class CombinedPlaygroundComponent implements OnInit {
+
+  isLoading = false;
+  showList = false;
+
   listOptions: IListGroupOption[] = [
     {
       name: 'A.P. Moller–Maersk Group. TEU: 3,012,172',
@@ -37,6 +41,15 @@ export class ListGroupDemoPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  loadList() {
+    this.isLoading = true;
+
+    setTimeout(() => {
+      this.isLoading = false;
+      this.showList = true;
+    }, 3000);
   }
 
 }

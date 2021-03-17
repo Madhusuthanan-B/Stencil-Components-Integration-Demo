@@ -1,0 +1,11 @@
+<section class="container">
+    <core-card header="Play Ground" subheader="See how the change detection and custom events of web components work">
+        <section class="flex-col">
+            <core-btn color="success" type="outline" (click)="loadList()">Load list</core-btn>
+        </section>
+        <section class="flex-col">
+            <core-spinner *ngIf="isLoading" type="border" color="info"></core-spinner>
+            <core-list-group *ngIf="!isLoading && showList" [options]="listOptions"></core-list-group>
+        </section>
+    </core-card>
+</section>

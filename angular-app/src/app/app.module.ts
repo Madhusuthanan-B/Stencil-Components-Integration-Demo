@@ -7,7 +7,8 @@ import { ButtonDemoPageComponent } from './button-demo-page/button-demo-page.com
 import { SpinnerDemoPageComponent } from './spinner-demo-page/spinner-demo-page.component';
 import { DropDownDemoPageComponent } from './drop-down-demo-page/drop-down-demo-page.component';
 import { ListGroupDemoPageComponent } from './list-group-demo-page/list-group-demo-page.component';
-import { LazyLoadingDemoPageComponent } from './lazy-loading-demo-page/lazy-loading-demo-page.component';
+import { IntroPageComponent } from './intro-page/intro-page.component';
+import { CombinedPlaygroundComponent } from './combined-playground/combined-playground.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LazyLoadingDemoPageComponent } from './lazy-loading-demo-page/lazy-load
     SpinnerDemoPageComponent,
     DropDownDemoPageComponent,
     ListGroupDemoPageComponent,
-    LazyLoadingDemoPageComponent
+    IntroPageComponent,
+    CombinedPlaygroundComponent
   ],
   imports: [
     BrowserModule,
