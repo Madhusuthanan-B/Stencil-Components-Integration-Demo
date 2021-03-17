@@ -13,6 +13,7 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "add-lib": "yalc add @foo/core-library",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
