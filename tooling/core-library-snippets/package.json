@@ -1,0 +1,30 @@
+{
+    "name": "core-library-snippets",
+    "publisher": "madhusuthanan",
+    "displayName": "Core Library Snippets",
+    "description": "Provides you the standard core component library components to use across multiple JS frameworks and libraries.",
+    "icon": "images/logo.png",
+    "galleryBanner": {
+		"color": "#190000",
+		"theme": "dark"
+	},
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/Madhusuthanan-B/Stencil-Components-Integration-Demo.git"
+	},
+    "version": "1.0.1",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

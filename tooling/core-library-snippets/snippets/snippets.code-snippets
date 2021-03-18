@@ -1,0 +1,243 @@
+{
+    "Core Nav Bar": {
+        "prefix": "core-nav-bar",
+        "body": [
+            "<core-nav-bar header=\"Title\"",
+            "\toptions='[{\"name\": \"Home\", \"value\": \"home\"}]'>",
+            " </core-nav-bar>"
+        ],
+        "description": "Nav bar component "
+    },
+    "Core Primary Button": {
+        "prefix": "core-btn-primary",
+        "body": [
+            "<core-btn color=\"primary\">Primary</core-btn>"
+        ],
+        "description": "Primary button (Blue color)"
+    },
+    "Core Secondary Button": {
+        "prefix": "core-btn-secondary",
+        "body": [
+            "<core-btn color=\"secondary\">Secondary</core-btn>"
+        ],
+        "description": "Secondary button (Dark Grey)"
+    },
+    "Core Danger Button": {
+        "prefix": "core-btn-danger",
+        "body": [
+            "<core-btn color=\"danger\">Danger</core-btn>"
+        ],
+        "description": "Danger button (Red)"
+    },
+    "Core Warn Button": {
+        "prefix": "core-btn-warn",
+        "body": [
+            "<core-btn color=\"warn\">Warn</core-btn>"
+        ],
+        "description": "Warn button (Yello)"
+    },
+    "Core Info Button": {
+        "prefix": "core-btn-info",
+        "body": [
+            "<core-btn color=\"info\">Info</core-btn>"
+        ],
+        "description": "Info button (Teal)"
+    },
+    "Core Success Button": {
+        "prefix": "core-btn-success",
+        "body": [
+            "<core-btn color=\"success\">Success</core-btn>"
+        ],
+        "description": "Success button (Green)"
+    },
+    "Core Primary Outline Button": {
+        "prefix": "core-btn-primary-outline",
+        "body": [
+            "<core-btn color=\"primary\" type=\"outline\">Primary</core-btn>"
+        ],
+        "description": "Primary Outline button (Blue color)"
+    },
+    "Core Secondary Outline Button": {
+        "prefix": "core-btn-secondary-outline",
+        "body": [
+            "<core-btn color=\"secondary\" type=\"outline\">Secondary</core-btn>"
+        ],
+        "description": "Secondary Outline button (Dark Grey)"
+    },
+    "Core Danger Outline Button": {
+        "prefix": "core-btn-danger-outline",
+        "body": [
+            "<core-btn color=\"danger\" type=\"outline\">Danger</core-btn>"
+        ],
+        "description": "Danger Outline button (Red)"
+    },
+    "Core Warn Outline Button": {
+        "prefix": "core-btn-warn-outline",
+        "body": [
+            "<core-btn color=\"warn\" type=\"outline\">Warn</core-btn>"
+        ],
+        "description": "Warn Outline button (Yello)"
+    },
+    "Core Info Outline Button": {
+        "prefix": "core-btn-info-outline",
+        "body": [
+            "<core-btn color=\"info\" type=\"outline\">Info</core-btn>"
+        ],
+        "description": "Info Outline button (Teal)"
+    },
+    "Core Success Outline Button": {
+        "prefix": "core-btn-success-outline",
+        "body": [
+            "<core-btn color=\"success\" type=\"outline\">Success</core-btn>"
+        ],
+        "description": "Success Outline button (Green)"
+    },
+    "Core Default Spinner": {
+        "prefix": "core-spinner-default",
+        "body": [
+            "<core-spinner></core-spinner>"
+        ],
+        "description": "Default border type spinner"
+    },
+    "Core Primary Spinner": {
+        "prefix": "core-spinner-primary",
+        "body": [
+            "<core-spinner color=\"primary\" type=\"border\"></core-spinner>"
+        ],
+        "description": "Border type primary spinner"
+    },
+    "Core Secondary Spinner": {
+        "prefix": "core-spinner-secondary",
+        "body": [
+            "<core-spinner color=\"secondary\" type=\"border\"></core-spinner>"
+        ],
+        "description": "Border type secondary spinner"
+    },
+    "Core Danger Spinner": {
+        "prefix": "core-spinner-danger",
+        "body": [
+            "<core-spinner color=\"danger\" type=\"border\"></core-spinner>"
+        ],
+        "description": "Border type danger spinner"
+    },
+    "Core Warn Spinner": {
+        "prefix": "core-spinner-warn",
+        "body": [
+            "<core-spinner color=\"warn\" type=\"border\"></core-spinner>"
+        ],
+        "description": "Border type warn spinner"
+    },
+    "Core Info Spinner": {
+        "prefix": "core-spinner-info",
+        "body": [
+            "<core-spinner color=\"info\" type=\"border\"></core-spinner>"
+        ],
+        "description": "Border type info spinner"
+    },
+    "Core Success Spinner": {
+        "prefix": "core-spinner-success",
+        "body": [
+            "<core-spinner color=\"success\" type=\"border\"></core-spinner>"
+        ],
+        "description": "Border type success spinner"
+    },
+    "Core Primary Grow Spinner": {
+        "prefix": "core-spinner-primary-grow",
+        "body": [
+            "<core-spinner color=\"primary\" type=\"grow\"></core-spinner>"
+        ],
+        "description": "Grow type primary spinner"
+    },
+    "Core Secondary Grow Spinner": {
+        "prefix": "core-spinner-secondary-grow",
+        "body": [
+            "<core-spinner color=\"secondary\" type=\"grow\"></core-spinner>"
+        ],
+        "description": "Grow type secondary spinner"
+    },
+    "Core Danger Grow Spinner": {
+        "prefix": "core-spinner-danger-grow",
+        "body": [
+            "<core-spinner color=\"danger\" type=\"grow\"></core-spinner>"
+        ],
+        "description": "Grow type danger spinner"
+    },
+    "Core Warn Grow Spinner": {
+        "prefix": "core-spinner-warn-grow",
+        "body": [
+            "<core-spinner color=\"warn\" type=\"grow\"></core-spinner>"
+        ],
+        "description": "Grow type warn spinner"
+    },
+    "Core Info Grow Spinner": {
+        "prefix": "core-spinner-info-grow",
+        "body": [
+            "<core-spinner color=\"info\" type=\"grow\"></core-spinner>"
+        ],
+        "description": "Grow type info spinner"
+    },
+    "Core Success Grow Spinner": {
+        "prefix": "core-spinner-success-grow",
+        "body": [
+            "<core-spinner color=\"success\" type=\"grow\"></core-spinner>"
+        ],
+        "description": "Grow type success spinner"
+    },
+    "Core Card": {
+        "prefix": "core-card",
+        "body": [
+            "<core-card header=\"Welcome\" subheader=\"Sample\">",
+            "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis suscipit sunt nesciunt tempore ex cupiditate soluta corporis repellendus vero, necessitatibus minus nisi, obcaecati nobis enim. Illum beatae placeat aut ut?",
+            "Quo, quaerat blanditiis? Assumenda distinctio culpa iste accusantium mollitia consequatur deleniti reprehenderit. Qui officia alias, voluptates quo minima eligendi nostrum. Exercitationem inventore ex autem facilis corporis ipsa officiis eum adipisci?</p>",
+            "</core-card>"
+        ],
+        "description": "Grow type success spinner"
+    },
+    "Core Drop Down Small": {
+        "prefix": "core-drop-down-small",
+        "body": [
+            "<core-drop-down",
+            "\tlabel=\"Label Value\"",
+            "\tcolor=\"primary\"",
+            "\tsize=\"small\"",
+            "\toptions='[{\"name\": \"Option 1\", \"value\": \"option_1\"},{\"name\": \"Option 2\", \"value\": \"option_2\"}]'>",
+            ">",
+            "</core-drop-down>"
+        ],
+        "description": "Small drop down"
+    },
+    "Core Drop Down Default": {
+        "prefix": "core-drop-down",
+        "body": [
+            "<core-drop-down",
+            "\tlabel=\"Label Value\"",
+            "\toptions='[{\"name\": \"Option 1\", \"value\": \"option_1\"},{\"name\": \"Option 2\", \"value\": \"option_2\"}]'>",
+            ">",
+            "</core-drop-down>"
+        ],
+        "description": "Default drop down"
+    },
+    "Core Drop Down Large": {
+        "prefix": "core-drop-down-large",
+        "body": [
+            "<core-drop-down",
+            "\tlabel=\"Label Value\"",
+            "\tcolor=\"info\"",
+            "\tsize=\"large\"",
+            "\toptions='[{\"name\": \"Option 1\", \"value\": \"option_1\"},{\"name\": \"Option 2\", \"value\": \"option_2\"}]'>",
+            ">",
+            "</core-drop-down>"
+        ],
+        "description": "Small drop down"
+    },
+    "Core List Group": {
+        "prefix": "core-list-group",
+        "body": [
+            "<core-list-group",
+            "\toptions='[{\"name\": \"List 1\", \"value\": \"option_1\"},{\"name\": \"List 2\", \"value\": \"option_2\"}]'>",
+            ">",
+            "</core-list-group>"
+        ],
+        "description": "List Group"
+    }
+}
