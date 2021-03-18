@@ -1,5 +1,5 @@
 # Web components integration into Angular, React and Vue applications
-> A repository to show case that same component library can be useed in angular, react and vue applications
+> A repository to show case that same component library can be used in angular, react and vue applications
 
 The library used in these applications is generated from: https://github.com/Madhusuthanan-B/Stencil-Component-Library
 
