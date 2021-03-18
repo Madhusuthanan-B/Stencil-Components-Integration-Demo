@@ -11,9 +11,11 @@ The library used in these applications is generated from: https://github.com/Mad
 ## Steps to launch the application
 
 * Install yalc globally `npm i yalc -g`
-* `npm install`
-* Install packages of sub applications by `npm run install`
-* Run `npm run start`
+* From root level, do `npm install`
+* cd angular-app and do `npm install` and `npm run add-lib`
+* cd react-app and do `npm install` and `npm run add-lib`
+* cd vue-app and do `npm install` and `npm run add-lib`
+* From root level, `npm run start` - This will concurrently start angular, react and vue apps on different ports
 
 ## Applications will be launched on the below urls
 
