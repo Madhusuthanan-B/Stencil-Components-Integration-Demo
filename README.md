@@ -1,6 +1,8 @@
 # Web components integration into Angular, React and Vue applications
 > A repository to show case that same component library can be used in angular, react and vue applications
 
+![Alt text](./stencil-flow.svg)
+
 The library used in these applications is generated from: https://github.com/Madhusuthanan-B/Stencil-Component-Library
 
 ## Pre-Requisite
